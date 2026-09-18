@@ -32,7 +32,25 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+span.swiper-pagination-bullet {
+  background-color: white;
+}
+
+.TranslateBtn:hover {
+  color: #61dafb;
+  background: #301482e4;
+  cursor: pointer;
+}
+
+
+@font-face {
+  font-family: myFont1;
+  src: url('/public/fonts/notoNash/NotoNaskhArabic-Bold.ttf');
+  weight: 800;
 }
