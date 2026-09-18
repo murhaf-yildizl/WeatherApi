@@ -20,7 +20,7 @@ export default function SwiperComp({handleChange})
         loop={true}
         onSlideChange={(swiper)=>{handleChange(swiper.realIndex)}}
         autoplay={{
-          delay: 2000,
+          delay: 3500,
           disableOnInteraction: false,
         }}
 
