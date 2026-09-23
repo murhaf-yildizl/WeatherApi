@@ -7,6 +7,7 @@ const baseUrl="https://api.openweathermap.org/data/2.5/weather";
 
 export async function fetchData(city)
 {
+  
   try{
    const { data } = await axios.get(baseUrl, {
     params: {                    
@@ -20,7 +21,7 @@ export async function fetchData(city)
  
   return {
     main: data.weather[0].main,
-    desc: data.weather[0].description,
+    description: data.weather[0].description,
     icon:`https://openweathermap.org/payload/api/media/file/${data.weather[0].icon}.png` ,
     country:data.sys.country,
     city:data.name,

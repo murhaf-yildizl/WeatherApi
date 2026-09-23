@@ -42,12 +42,26 @@ span.swiper-pagination-bullet {
   background-color: white;
 }
 
+.swiper-wrapper {
+  margin-bottom: 30px;
+}
+
 .TranslateBtn:hover {
   color: #61dafb;
   background: #301482e4;
   cursor: pointer;
 }
 
+.swiper-slide {
+  opacity: 0.4;
+  transform: scale(1);
+  transition: opacity 200ms ease, transform 200ms ease-in;
+}
+
+.swiper-slide-active {
+  opacity: 1;
+  transform: scale(0.5);
+}
 
 @font-face {
   font-family: myFont1;

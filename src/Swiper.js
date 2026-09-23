@@ -5,10 +5,11 @@ import SwiperSlideComp from './SwiperSlide';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { cities } from './cities/cities';
+import 'swiper/css/effect-coverflow';
 
-export default function SwiperComp({handleChange})
+export default function SwiperComp()
 {
-    console.log("TTTTTTTTTTTTTTTT");
+    
     return (
         <Swiper
         modules={[Autoplay, Pagination, EffectCoverflow]}
@@ -18,7 +19,7 @@ export default function SwiperComp({handleChange})
         spaceBetween={80}
         speed={800}
         loop={true}
-        onSlideChange={(swiper)=>{handleChange(swiper.realIndex)}}
+        onSlideChange={(swiper)=>{}}
         autoplay={{
           delay: 3500,
           disableOnInteraction: false,
@@ -36,7 +37,7 @@ export default function SwiperComp({handleChange})
           slideShadows: false,
         }}
              >
-                {cities.map((ct,index)=> <SwiperSlide><SwiperSlideComp index={index} /></SwiperSlide>)}
+                {cities.map((ct,index)=> <SwiperSlide key={index}><SwiperSlideComp index={index} /></SwiperSlide>)}
                
         </Swiper>
        

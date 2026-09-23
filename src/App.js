@@ -5,8 +5,8 @@ import Bottom from './Bottom';
 import WeatherProvider from './WeatherProvider'; 
 import Swiper from './Swiper';
 import Box  from '@mui/material/Box';
-import { boxStyle,containerStyle } from './AppStyle';
-import { useState} from 'react';
+import {containerStyle,boxStyle } from './AppStyle';
+import Date from './Date'
 
   const theme=createTheme(
     {
@@ -20,21 +20,17 @@ import { useState} from 'react';
 
 function App() {
 
-  const [backgroundIndex,setBackgroundIndex]=useState(0);
-
-  function handleChange(index){
-    setBackgroundIndex(index)
-  }
-
   return (
-
     <ThemeProvider theme={theme}>
       <WeatherProvider>
     <div className="App">
       
-     <Box sx={boxStyle(backgroundIndex)}>
-       <Container maxWidth='xs' className="Contents-container"  sx={containerStyle}>
-        <Swiper handleChange={handleChange} />
+     <Box sx={boxStyle}>
+      
+        <Date />
+       
+       <Container maxWidth='sm' className="Contents-container"  sx={containerStyle}>
+        <Swiper/>
        </Container>
        
        <Bottom/>

@@ -1,21 +1,27 @@
 
 
+export const DateStyle={
+    color:'#13112896',
+    alignContent:'center',
+    padding:'10px 0'
+}
+
 export const HeaderStyle={
     header:{
+        width:'100%',
         display:'flex',
-        alignItems:'end',
-        justifyContent:'start',
-        width:'100%'
+        color:'white',  
+        background:'#68797516'
+           
+        
     },
-    city:{
-         fontSize:32,
-        color: 'white',
-        margin:'1px 10px'
-    },
-
-    date:{
-        color: 'white',
+    city_temp:{
+        height:'100%',
+        alignContent:'center',
+        margin:'0 6px'
+ 
     }
+ 
 }
 
 
@@ -30,9 +36,19 @@ export const BodyStyle={
     bodyContents:{
         display:'flex',
         flexDirection:'column',
-        alignItems:'start',
-        justifyContent:'start'
+        justifyContent:'space-between',
+        alignItems:'center'
     },
+    description:{
+    borderRadius:'20px',    
+    margin:'4px 12px',    
+    color:'white',
+    background: '#68797529',
+    fontSize: '27px',
+    fontWeight: '500',
+    alignContent: 'center',
+    }
+    ,
     temparatue:{
         display:'flex',
         flexDirection:'row',
@@ -40,6 +56,12 @@ export const BodyStyle={
     },
     text:{
         color:'white'
+    },
+    ImageStyle:{
+        borderRadius :'40px',
+        width:'300px',
+        height:'300px',
+        opacity:'60%'
     }
 
 
@@ -48,11 +70,11 @@ export const BodyStyle={
 
 export const BottomStyle={
     translate_btn:{
-        marginTop:'10px',
+        marginTop:'20px',
         justifySelf: 'center',
         textAlign: 'end',         
         color: 'white',
-        background:'#30148233',
+        background:'#13112896',
         padding:'5px 14px',
         fontSize: 18 
         }

@@ -1,20 +1,16 @@
-import { cities } from "./cities/cities"
 
-export function boxStyle(index){
-    if(index>=cities.length)
-        index=0;
-    return{
+
+export const boxStyle={
        height: '100vh',
        width: '100%',
-       background: `linear-gradient(rgba(215, 14, 14, 0.54), rgba(36, 14, 181, 0.64)),
-                    url('/assets/images/${cities[index]}.png')`,
+       background: `url('https://cdn.pixabay.com/animation/2023/02/15/02/20/02-20-04-915_512.gif')`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       alignContent:'center'
     }
-}
+
 export const containerStyle={ 
-    padding: '0 !important',
-     backgroundColor:'rgba(179, 39, 60, 0.48)',
+     padding:'8px',
+     backgroundColor:'#bdbdc557',
      borderRadius:'20px',
      boxShadow:'0 10px 1px #5555552b'}    
