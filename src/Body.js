@@ -11,17 +11,17 @@ export default function Body({index=0})
 
     return (
       <div  className='body' style={BodyStyle.body}>
-        <img   className='city_image' src={`./assets/images/${cities[index]}.png`} style={BodyStyle.ImageStyle}/>
+        <img   className='city_image' src={`./assets/images/${cities[index]}.png`} style={{...BodyStyle.ImageStyle,height:'300px'}}/>
         <Grid container >
            <Grid size={12}>
-            <img className='weather_icon' src={data[index]?.icon} style={{...BodyStyle.ImageStyle,width:'200px',height:'200px',marginTop:'-40px'}} /> 
+            <img className='weather_icon' src={data[index]?.icon} style={{...BodyStyle.ImageStyle,width:'50%',marginTop:'-40px'}} /> 
            </Grid>
 
           <Grid size={12} sx={BodyStyle.description}>
             {t(data[index]?.description)}
           </Grid>
         
-        <Grid container size={12} sx={{...BodyStyle.description,fontSize:'18px'}}>
+        <Grid container size={12} sx={{...BodyStyle.description}}>
          <Grid size={6}>
             {t('max')}: {data[index]?.maxTemp}
          </Grid>

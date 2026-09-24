@@ -8,6 +8,7 @@ import Box  from '@mui/material/Box';
 import {containerStyle,boxStyle } from './AppStyle';
 import Date from './Date'
 
+
   const theme=createTheme(
     {
     
@@ -25,8 +26,8 @@ function App() {
       <WeatherProvider>
     <div className="App">
       
-     <Box sx={boxStyle}>
-      
+        <div style={boxStyle}>
+       
         <Date />
        
        <Container maxWidth='sm' className="Contents-container"  sx={containerStyle}>
@@ -34,7 +35,8 @@ function App() {
        </Container>
        
        <Bottom/>
-     </Box>
+       
+     </div>
       
     </div>
     </WeatherProvider>
