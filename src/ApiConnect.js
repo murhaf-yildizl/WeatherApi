@@ -2,7 +2,7 @@ import axios from 'axios'
 
 const latitude="41.001";
 const longtude="28.994";
-const apiKey="ca3f3d3c81473d0206b138d6bc558f9f";
+const apiKey="";
 const baseUrl="https://api.openweathermap.org/data/2.5/weather";
 
 export async function fetchData(city)
